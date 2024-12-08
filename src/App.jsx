@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:3333/usuarios"); // URL do backend
+        const response = await fetch("https://crud-operations-backand.onrender.com/usuarios"); // URL do backend
         if (!response.ok) {
           throw new Error("Erro ao buscar os usuários");
         }
