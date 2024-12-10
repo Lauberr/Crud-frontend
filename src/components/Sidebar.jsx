@@ -5,9 +5,10 @@ export function Sidebar() {
     let estilo = `
       flex items-center gap-3
       px-3 py-2 w-full
-      text-sm text-white 
-      hover:bg-zinc-900 `;
-    let ativo = "border-r-4 border-solid border-slate-800 ";
+      rounded
+      text-sm text-black 
+      hover:bg-zinc-400 `;
+    let ativo = "bg-yellow-400 ";
 
     let final = props.isActive ? estilo + ativo : estilo;
 
@@ -15,11 +16,11 @@ export function Sidebar() {
   };
 
   return (
-    <aside className="flex flex-col gap-5 bg-black min-w-72">
+    <aside className="flex flex-col gap-5 bg-red-100 min-w-72">
       <header
         className={`
           flex justify-center items-center gap-2
-          bg-black text-zinc-50 
+          bg-red-100 text-black 
           px-1 py-5 h-16          
           text-2xl font-black
         `}
@@ -43,7 +44,7 @@ export function Sidebar() {
           Student
         </NavLink>
 
-        
+
 
       </nav>
 

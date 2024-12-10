@@ -21,7 +21,7 @@ import { LoginPage } from "./pages/LoginPage"
 
 const rotas = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<LoginPage />}>
+    <Route path="/" element={<Layout />}>
       <Route index element={<LoginPage />} />
       <Route path="home" element={<Home />} />
       <Route path="payment" element={<Payment />} />
