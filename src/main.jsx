@@ -7,9 +7,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import "./index.css";
-
-
-
 import { Home } from "./pages/Home";
 import { Payment } from "./pages/Payment";
 import { Student } from "./pages/Student";
@@ -18,16 +15,22 @@ import { Layout } from "./pages/Layout"
 import { LoginPage } from "./pages/LoginPage"
 
 
-
 const rotas = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route index element={<LoginPage />} />
-      <Route path="home" element={<Home />} />
-      <Route path="payment" element={<Payment />} />
-      <Route path="student" element={<Student/>} />
+    <>
+      {/* Rota principal redirecionando para LoginPage */}
+      <Route path="/" element={<LoginPage />} />
+
+      {/* Rotas com Layout e Sidebar */}
+      <Route path="/" element={<Layout showSidebar={true} />}>
+        <Route path="home" element={<Home />} />
+        <Route path="payment" element={<Payment />} />
+        <Route path="student" element={<Student />} />
+      </Route>
+
+      {/* Página 404 sem sidebar */}
       <Route path="*" element={<Pagina404 />} />
-    </Route>
+    </>
   )
 );
 
@@ -36,16 +39,6 @@ createRoot(document.getElementById("root")).render(
     <RouterProvider router={rotas} />
   </StrictMode>
 );
-
-
-
-
-
-
-
-
-
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

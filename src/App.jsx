@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 function App() {
 
   const [users, setUsers] = useState([]); // Estado para armazenar os usuários
@@ -28,7 +27,6 @@ function App() {
 
   if (loading) return <p className="text-center text-indigo-600">Carregando usuários...</p>; // Exibe o carregamento
   if (error) return <p className="text-center text-red-600">Erro: {error}</p>; // Exibe erro, se houver
-
 
   return (
     <div className="max-w-7xl mx-auto p-6">
