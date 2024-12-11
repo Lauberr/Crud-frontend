@@ -31,30 +31,44 @@ export function Card() {
 
   return (
     <div className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Lista de Usuários</h1>
       {users.length === 0 ? (
         <p className="text-center text-gray-500">Nenhum usuário encontrado.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {users.map(user => (
-            <div
+        <div className="flex flex-wrap gap-6">
+         {users.map(user => (
+            <tr 
               key={user.id}
-              className="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+              className="w-full bg-white p-3 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
             >
-              <h2 className="text-2xl font-semibold text-indigo-700">{user.nome}</h2>
-              <p className="text-gray-600 mt-2">
-                <strong>Email:</strong> {user.email}
-              </p>
-              <p className="text-gray-600 mt-2">
-                <strong>Celular:</strong> {user.celular}
-              </p>
-            </div>
+              <td>{user.nome}</td>
+              <td>{user.email}</td>
+              <td>{user.celular}</td>
+              <td>{user.id}</td>
+              <td>{user.data_de_admissão}</td>
+              editar
+              excluir
+            </tr>
           ))}
         </div>
+
+
+        // <div className="flex flex-wrap gap-6">
+        //   {users.map(user => (
+        //     <div
+        //       key={user.id}
+        //       className="w-full bg-white p-3 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105"
+        //     >
+        //       <h2 className="text-2xl font-semibold text-indigo-700">{user.nome}</h2>
+        //       <p className="text-gray-600 mt-2">
+        //         <strong>Email:</strong> {user.email}
+        //       </p>
+        //       <p className="text-gray-600 mt-2">
+        //         <strong>Celular:</strong> {user.celular}
+        //       </p>
+        //     </div>
+        //   ))}
+        // </div>
       )}
     </div>
   );
 };
-
-
-export default App
