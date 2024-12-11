@@ -1,3 +1,6 @@
+
+
+
 export function LoginPage() {
     return (
         <div className="bg-gradient-to-r from-yellow-600 to-yellow-300 h-screen w-screen flex items-center justify-center">
