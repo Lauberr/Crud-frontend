@@ -2,6 +2,8 @@
 export function Home() {
     return (
         <div className="overflow-hidden h-full w-full  ">
+            
+            {/* Cabeçalho */}
 
             <header className="p-8 flex w-full justify-between items-center">
 
