@@ -30,7 +30,7 @@ export function LoginPage() {
                         <input 
                             className=" placeholder:text-slate-300 mt-1 p-2 text-slate-500 border border-slate-200 outline-0 rounded w-full " 
                             type="password" 
-                            placeholder="Enter com sua senha"  
+                            placeholder="Entre com sua senha"  
                         />
                     </div>
 
