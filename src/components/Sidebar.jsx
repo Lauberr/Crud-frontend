@@ -4,13 +4,13 @@ import xandis from "../assets/xandis.jpg";
 export function Sidebar() {
   const getEstilo = (props) => {
     let estilo = `
-      flex items-center  justify-center 
+      flex items-center
       gap-3 py-2 w-full
       rounded
       text-lg text-black 
-      hover:bg-yellow-500 
+      hover:bg-orange-200	
     `;
-    let ativo = "border-r-8 border-black";
+    let ativo = "bg-amber-500";
     let final = props.isActive ? estilo + ativo : estilo;
 
     return final;
@@ -28,7 +28,7 @@ export function Sidebar() {
       <div className="mb-20 flex flex-col bg-orange-100	 min-w-72 w-2/12 items-center">
         <img src={xandis} alt="picture" className=" w-1/2 rounded-full" />
         <strong className="w-full text-center mt-3 text-xl">Xandis</strong>
-        <p className="text-amber-500	 text-sm "> Admin </p>
+        <p className="text-amber-400	 text-sm "> <strong>Admin</strong> </p>
       </div>
 
       {/* Navegação da Sidebar */}

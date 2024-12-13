@@ -5,7 +5,7 @@ export function Payment() {
         <div className=" overflow-hidden h-full w-full min-h-screen bg-gray-50">
 
             {/* Cabeçalho */}
-            <header className="p-8 flex w-full justify-between items-center bg-white">
+            <header className="p-4 flex w-full justify-between items-center bg-white">
 
                 {/* Botão Voltar */}
                 <NavLink to="/" className="ml-3 p-2 rounded text-white px-5">
