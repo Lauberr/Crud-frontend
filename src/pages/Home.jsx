@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
 
+
+ // função de contar quantidade de  id  VARCHAR(50)  PRIMARY KEY, para ter o numero de usuários ;
+ // função de pegar e somar todos os quantidade_paga VARCHAR (20) 
+
+
 export function Home() {
     return (
         <div className="overflow-hidden h-full w-full  ">
