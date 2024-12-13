@@ -24,46 +24,6 @@ export function ModalForm({ show, onClose, onSubmit }) {
     onClose(); // Fecha o modal
   };
 
-  const handleEditStudent = async (id, updatedData) => {
-    try {
-      const response = await fetch(`https://crud-operations-backand.onrender.com/usuarios/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(updatedData),
-      });
-  
-      if (!response.ok) {
-        throw new Error("Erro ao atualizar estudante");
-      }
-  
-      const updatedStudent = await response.json();
-      setUsers((prevUsers) =>
-        prevUsers.map((user) => (user.id === id ? updatedStudent : user))
-      ); // Atualiza a lista localmente
-    } catch (error) {
-      console.error("Erro ao atualizar estudante:", error.message);
-    }
-  };
-
-  const handleDeleteStudent = async (id) => {
-    try {
-      const response = await fetch(`https://crud-operations-backand.onrender.com/usuarios/${id}`, {
-        method: "DELETE",
-      });
-  
-      if (!response.ok) {
-        throw new Error("Erro ao excluir estudante");
-      }
-  
-      setUsers((prevUsers) => prevUsers.filter((user) => user.id !== id)); // Remove localmente
-    } catch (error) {
-      console.error("Erro ao excluir estudante:", error.message);
-    }
-  };
-  
-
   if (!show) return null; // Não renderiza nada se o modal não estiver visível
 
   return (

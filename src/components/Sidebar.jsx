@@ -5,7 +5,7 @@ export function Sidebar() {
   const getEstilo = (props) => {
     let estilo = `
       flex items-center
-      gap-3 py-2 w-full
+      gap-3 py-2 px-4 w-full
       rounded
       text-lg text-black 
       hover:bg-orange-200	
