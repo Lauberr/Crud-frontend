@@ -4,6 +4,7 @@ import xandis from "../assets/xandis.jpg";
 export function Sidebar() {
   const getEstilo = (props) => {
     let estilo = `
+      p-4
       flex items-center
       gap-3 py-2 px-4 w-full
       rounded
