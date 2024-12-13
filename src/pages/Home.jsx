@@ -6,7 +6,7 @@ export function Home() {
             
             {/* Cabeçalho */}
 
-            <header className="p-8 flex w-full justify-between items-center">
+            <header className=" font-sans p-8 flex w-full justify-between items-center">
 
                 {/* Botão Voltar */}
 
