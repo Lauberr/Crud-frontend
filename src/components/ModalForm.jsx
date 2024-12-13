@@ -6,6 +6,8 @@ export function ModalForm({ show, onClose, onSubmit }) {
     email: "",
     celular: "",
     data_de_admissao: "",
+    numero_da_conta: "",
+    quantidade_paga: ""
   });
 
   // Atualiza os valores do formulário
@@ -97,6 +99,28 @@ export function ModalForm({ show, onClose, onSubmit }) {
               type="tel"
               name="celular"
               value={formData.celular}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium">Número da Conta</label>
+            <input
+              type="number"
+              name="numero_da_conta"
+              value={formData.numero_da_conta}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium">Quantidade Paga</label>
+            <input
+              type="number"
+              name="quantidade_paga"
+              value={formData.quantidade_paga}
               onChange={handleChange}
               className="w-full p-2 border rounded"
               required
