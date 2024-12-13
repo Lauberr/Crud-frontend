@@ -1,14 +1,14 @@
 import { Card } from "../components/Card";
 import React, { useEffect, useState } from "react";
-import { ModalForm } from "../components/ModalForm"; // Importe o ModalForm
+import { ModalForm } from "../components/ModalForm"; 
 import { NavLink } from "react-router-dom";
 
 
 export function Student() {
-  const [users, setUsers] = useState([]); // Estado para armazenar os usuários
-  const [loading, setLoading] = useState(true); // Estado para gerenciar o carregamento
-  const [error, setError] = useState(null); // Estado para erros
-  const [showModal, setShowModal] = useState(false); // Estado para exibir o modal
+  const [users, setUsers] = useState([]);             // Estado para armazenar os usuários
+  const [loading, setLoading] = useState(true);       // Estado para gerenciar o carregamento
+  const [error, setError] = useState(null);           // Estado para erros
+  const [showModal, setShowModal] = useState(false);  // Estado para exibir o modal
 
   useEffect(() => {
     const fetchUsers = async () => {
