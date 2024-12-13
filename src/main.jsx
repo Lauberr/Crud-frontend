@@ -1,47 +1,11 @@
+import React from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
+import App from "./App";
 import "./index.css";
-import { Home } from "./pages/Home";
-import { Payment } from "./pages/Payment";
-import { Student } from "./pages/Student";
-import { Pagina404 } from "./pages/Pagina404";
-import { Layout } from "./pages/Layout"
-import { LoginPage } from "./pages/LoginPage"
-
-
-const rotas = createBrowserRouter(
-  createRoutesFromElements(
-    <>
-    
-      <Route path="/" element={<LoginPage />} />
-
-    
-      <Route path="/" element={<Layout showSidebar={true} />}>
-        <Route path="home" element={<Home />} />
-        <Route path="payment" element={<Payment />} />
-        <Route path="student" element={<Student />} />
-      </Route>
-
-      
-      <Route path="*" element={<Pagina404 />} />
-    </>
-  )
-);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={rotas} />
+    <App />
   </StrictMode>
 );
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
