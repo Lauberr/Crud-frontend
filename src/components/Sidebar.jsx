@@ -36,7 +36,7 @@ export function Sidebar() {
       <nav className={`flex flex-col justify-between items-center gap-2 w-3/4 h-full`}>
         <div className="flex flex-col justify-start items-center gap-2 w-3/4 h-full">
 
-        {/* Home */}
+          {/* Home */}
           <NavLink to="home" className={getEstilo}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export function Sidebar() {
             <div>Início</div>
           </NavLink>
 
-        {/* Pagamentos */}
+          {/* Pagamentos */}
           <NavLink to="payment" className={getEstilo}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export function Sidebar() {
             <div>Pagamentos</div>
           </NavLink>
 
-        {/* Estudantes */}
+          {/* Estudantes */}
           <NavLink to="student" className={getEstilo}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
