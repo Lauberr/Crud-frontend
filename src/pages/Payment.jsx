@@ -40,7 +40,7 @@ export function Payment() {
 
             {/* Cabeçalho */}
             <header className="p-4 flex w-full justify-between items-center bg-white">
-                
+
                 {/* Botão Voltar */}
                 <NavLink to="/" className="ml-3 p-2 rounded text-white px-5">
                     <svg width="25" height="25" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

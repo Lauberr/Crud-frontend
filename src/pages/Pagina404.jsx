@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-
 export function Pagina404() {
   return (
     <div className="h-screen w-screen">
@@ -15,12 +14,9 @@ export function Pagina404() {
 
         <NavLink to="/" className="bg-gray-800 text-white rounded-2xl h-10 flex flex-wrap justify-center items-center w-56">
 
-
           <div>Voltar para Página de Login</div>
         </NavLink>
       </div>
-
-
     </div>
   )
 

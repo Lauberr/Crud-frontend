@@ -21,8 +21,6 @@ export function Home() {
                     </svg>
                 </NavLink>
 
-                {/*    */}
-
                 <div className="relative w-full max-w-sm flex items-center space-x-4 mr-12">
 
                     {/* Barra de Pesquisa */}
@@ -71,8 +69,6 @@ export function Home() {
                     </button>
                 </div>
             </header>
-
-            {/*    */}
 
             <main className="flex justify-around p-8 ">
 
@@ -134,8 +130,6 @@ export function Home() {
                     <span className="text-4xl"> <strong> 3 </strong> </span>
 
                 </div>
-
-
             </main>
         </div>
     );
